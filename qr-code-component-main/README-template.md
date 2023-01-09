@@ -6,14 +6,10 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 - [Overview](#overview)
   - [Screenshot](#screenshot)
-  - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
@@ -23,12 +19,12 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ![](./DesktopScreen.jpg)
 
-See above the outcome of the challenge. Nothing major but good to learn on Flexbox positioning (made both the body and the container a flexBox) and some generic stylinh.
+See above the outcome of the challenge. Nothing major but good to learn on Flexbox positioning (made both the body and the container a flexBox) and some generic styling.
 
 ### Links
 
-- Solution URL: [Add solution URL here]()
-- Live Site URL: [Add live site URL here](https://fe-mentor-challenges.vercel.app)
+- Solution URL: [GitHub repo](https://github.com/cerve86/FE-Mentor-challenges/tree/main/qr-code-component-main/design)
+- Live Site URL: [Solution site](https://fe-mentor-challenges.vercel.app)
 
 ## My process
 
@@ -41,27 +37,32 @@ See above the outcome of the challenge. Nothing major but good to learn on Flexb
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+Solution was pretty easy to implement rather more difficult to understand the right padding / sizing to match it to the design. Main learning for me was the utilization of Vercel to deploy the site. Pretty sure I made some mistakes but fun to have a webserver hosting so quickly. Now that I have connected  VSCode to Git to Vercel it works like a breeze ;) 
 
-To see how you can add code snippets, see below:
+I've 'cleared' the CSS only with the margin and i've initialized some variables for the colors.
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+*{
+    --white: hsl(0, 0%, 100%);
+    --lightgray: hsl(212, 45%, 89%);
+    --grayishBlue: hsl(220, 15%, 55%);
+    --darkBlue: hsl(218, 44%, 22%);
+    margin: 0px;
 }
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+Both body and .container are a Flex item:
+
+```css
+body {
+  display: flex;
+}
+
+.container {
+display: flex;
 }
 ```
 
 If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ## Author
 
